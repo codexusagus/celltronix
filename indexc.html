@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celltronix | Global Shipping & UI Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-morphism border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i data-lucide="cpu" class="text-white"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tighter text-white">CELL<span class="text-blue-500 text-gradient">TRONIX</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#about" class="hover:text-blue-400 transition">Solutions</a>
+                <a href="#contact" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-white transition">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 glass-morphism rounded-full border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                Multi-Sector Management Specialist
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Streamlining <span class="text-gradient">Logistics</span>,<br>
+                Crafting <span class="text-gradient">Interfaces</span>.
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                From global shipping coordination to high-performance UI developments, we manage the infrastructure that keeps your business moving forward.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold text-white transition flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
+                    Book a Consultation <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#services" class="px-8 py-4 glass-morphism hover:bg-white/10 rounded-xl font-bold text-white transition">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Core Competencies</h2>
+                    <p class="text-slate-400 max-w-md">We offer a unique blend of physical logistics and digital expertise to cover all your business needs.</p>
+                </div>
+                <div class="h-px bg-white/10 flex-grow mx-8 hidden md:block"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Shipping -->
+                <div class="service-card p-8 rounded-3xl glass-morphism">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="truck" class="text-blue-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Shipping Management</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        End-to-end logistics solutions. We optimize your supply chain, handle freight forwarding, and ensure your products reach their destination on time, every time.
+                    </p>
+                </div>
+
+                <!-- UI Development -->
+                <div class="service-card p-8 rounded-3xl glass-morphism">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="layout" class="text-purple-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UI/UX Development</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Creating stunning digital experiences. Our front-end specialists build responsive, high-speed interfaces tailored to modern user expectations.
+                    </p>
+                </div>
+
+                <!-- Product & Branding -->
+                <div class="service-card p-8 rounded-3xl glass-morphism">
+                    <div class="w-14 h-14 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="sparkles" class="text-pink-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Branding & Make-Up</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Comprehensive product aesthetic management. We handle visual presentation, packaging design, and aesthetic refinements to help your brand stand out.
+                    </p>
+                </div>
+
+                <!-- Other Stuff -->
+                <div class="service-card p-8 rounded-3xl glass-morphism lg:col-span-3">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="plus" class="text-emerald-400 w-10 h-10"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">And Much More...</h3>
+                            <p class="text-slate-400 leading-relaxed">
+                                Celltronix is a versatile agency. From general technical consulting to inventory systems and digital assets, we provide the "other stuff" that your project needs to succeed. If you have a unique challenge, we have a solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-black text-white mb-2">500+</div>
+                <div class="text-blue-100 text-xs uppercase font-bold tracking-widest">Global Shipments</div>
+            </div>
+            <div>
+                <div class="text-4xl font-black text-white mb-2">120+</div>
+                <div class="text-blue-100 text-xs uppercase font-bold tracking-widest">UI Projects</div>
+            </div>
+            <div>
+                <div class="text-4xl font-black text-white mb-2">99.9%</div>
+                <div class="text-blue-100 text-xs uppercase font-bold tracking-widest">Uptime</div>
+            </div>
+            <div>
+                <div class="text-4xl font-black text-white mb-2">24/7</div>
+                <div class="text-blue-100 text-xs uppercase font-bold tracking-widest">Expert Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="glass-morphism rounded-3xl p-8 md:p-12 border border-white/10 relative z-10">
+                <h2 class="text-3xl font-bold text-white mb-4 text-center">Let's Build Something.</h2>
+                <p class="text-slate-400 text-center mb-10">Ready to start your next project with Celltronix? Fill out the form below and our team will get back to you within 24 hours.</p>
+                
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300 ml-1">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300 ml-1">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-semibold text-slate-300 ml-1">Service Interest</label>
+                        <select class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition text-slate-400">
+                            <option>Shipping Management</option>
+                            <option>UI Development</option>
+                            <option>Product & Make-Up</option>
+                            <option>Other / General Consulting</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-semibold text-slate-300 ml-1">Message</label>
+                        <textarea placeholder="How can we help?" rows="4" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition"></textarea>
+                    </div>
+                    <button type="button" onclick="handleSubmit()" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold text-white transition shadow-lg shadow-blue-500/20">
+                        Send Inquiry
+                    </button>
+                    <p id="successMessage" class="hidden text-emerald-400 text-center font-medium">Message sent successfully! We'll be in touch.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                    <i data-lucide="cpu" class="text-white w-4 h-4"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tighter text-white">CELL<span class="text-blue-500">TRONIX</span></span>
+            </div>
+            <p class="text-slate-500 text-sm italic">"Logistics in motion, Design in pixels."</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-500 hover:text-white transition"><i data-lucide="twitter"></i></a>
+                <a href="#" class="text-slate-500 hover:text-white transition"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="text-slate-500 hover:text-white transition"><i data-lucide="github"></i></a>
+            </div>
+            <div class="text-slate-500 text-xs">
+                &copy; 2026 Celltronix Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Simple form submission mock
+        function handleSubmit() {
+            const btn = document.querySelector('button[type="button"]');
+            const successMsg = document.getElementById('successMessage');
+            
+            btn.innerHTML = '<span class="animate-pulse italic">Sending...</span>';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
